@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main(void)
+{
+    int units;
+    double bill;
+    printf("enter eletricity units consumed:");
+    scanf("%d",&units);
+    if ("units<0");
+    {
+        printf("units cannot be negitive.\n");
+        return 0;
+    }
+    if (units<=50)
+    bill=units*1.50;
+    else if (units<=150)
+    bill=50*1.50+100*2.50+100*4.00+(units-250)*6.00;
+    bill=bill+100.00;
+    printf("electricity bill=rs.%.2iF\n",bill);
+    return 0;
+}
